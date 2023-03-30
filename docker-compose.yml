@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   zcore-validator:
-    image: mosqueiro/zcore-validator
+    image: zcorenetwork/validator
     container_name: zcore-validator
     restart: always
     ports:
