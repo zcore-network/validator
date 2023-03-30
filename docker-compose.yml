@@ -9,7 +9,7 @@ services:
       - 30303:30303
     volumes:
       - ./logs:/nethermind/logs
-      - ./nethermind_db:/nethermind/nethermind_db
+      - ./db:/nethermind/nethermind_db
       - ./keystore:/nethermind/keystore  
     environment:
       - NETHERMIND_KEYSTORECONFIG_BLOCKAUTHORACCOUNT=$ACCOUNT
