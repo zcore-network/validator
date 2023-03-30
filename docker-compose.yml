@@ -1,0 +1,27 @@
+version: '3.5'
+services:
+  zcore-validator:
+    image: mosqueiro/zcore-validator
+    container_name: zcore-validator
+    restart: always
+    ports:
+      - 8545:8545
+      - 30303:30303
+    volumes:
+      - ./logs:/nethermind/logs
+      - ./nethermind_db:/nethermind/nethermind_db
+      - ./keystore:/nethermind/keystore  
+    environment:
+      - NETHERMIND_KEYSTORECONFIG_BLOCKAUTHORACCOUNT=$ACCOUNT
+      - NETHERMIND_KEYSTORECONFIG_UNLOCKACCOUNTS="$ACCOUNT"
+      - NETHERMIND_KEYSTORECONFIG_PASSWORDFILES=/nethermind/keystore/pass.pwd
+volumes:
+  nethermind_db:
+    driver: local
+    name: nethermind_db
+  keystore:
+    driver: local
+    name: keystore
+  logs:
+    driver: local
+    name: logs
