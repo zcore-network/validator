@@ -16,6 +16,6 @@ https://github.com/zcore-network/validator/archive/refs/heads/main.zip
 ACCOUNT=YOUR_ADDRESS_HERE
 ```
 
-- Paste ```keystore``` content folder from zcore-getkey (2 files) in ```keystore``` here
+- Paste ```keystore``` folder from [zcore genkey](https://github.com/zcore-network/genkey) in ```keystore``` here
 
 - Run ```docker compose up -d``` command in the folder where you extracted this repository
