@@ -11,11 +11,11 @@ https://github.com/zcore-network/validator/archive/refs/heads/main.zip
 
 ### Commands
 
-- Create ```.env``` file with text editor (in the folder where you extracted this repository and paste your address (from zcore-getkey):
+- Replace ```.env``` file and ```keystore``` folder from [zcore genkey](https://github.com/zcore-network/genkey)
+
+- Open ```.env``` file and confirm your address that will receive validation rewards:
 ```
 ACCOUNT=YOUR_ADDRESS_HERE
 ```
-
-- Paste ```keystore``` folder from [zcore genkey](https://github.com/zcore-network/genkey) in ```keystore``` here
 
 - Run ```docker compose up -d``` command in the folder where you extracted this repository
