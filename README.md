@@ -1,13 +1,13 @@
 # ZCore Network (ZCN) Node
 
 ### FIRST Get key HERE:
-https://github.com/mosqueiro/zcore-getkey
+https://github.com/zcore-network/genkey
 
 ### Install Docker Desktop
 https://www.docker.com/products/docker-desktop/
 
 ### Download this repository and extract:
-https://github.com/mosqueiro/zcore-node/archive/refs/heads/main.zip
+https://github.com/zcore-network/validator/archive/refs/heads/main.zip
 
 ### Commands
 
